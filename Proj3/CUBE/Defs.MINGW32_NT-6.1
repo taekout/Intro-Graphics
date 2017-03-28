@@ -1,0 +1,15 @@
+# flags for C compiler
+#   -g to enable debugging info
+#   _STDCALL_SUPPORTED and _M_IX86 are for correct linking of GLUT on Win32
+CFLAGS = -g -D_STDCALL_SUPPORTED -D_M_IX86
+
+# flags for C++ compiler -- same as C compiler so C++ can find includes
+CXXFLAGS = $(CFLAGS)
+
+# names of libraries to use:
+#   glut for cross-platform window creation and interaction
+#   GLU for a set of utilities for GL (some of which are used by GLUT)
+#   GL for OpenGL itself
+LDLIBS = -L. -lglut32 -lglu32 -lopengl32 -lm
+
+EXE=.exe

@@ -1,0 +1,36 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!DOCTYPE KDevPrjSession>
+<KDevPrjSession>
+ <DocsAndViews NumberOfDocuments="2" >
+  <Doc0 NumberOfViews="1" URL="file:///afs/umbc.edu/users/s/h/shin7/home/Desktop/Proj4/swisscheese/swisscheese.cpp" >
+   <View0 Type="Source" />
+  </Doc0>
+  <Doc1 NumberOfViews="1" URL="file:///afs/umbc.edu/users/s/h/shin7/home/Desktop/Proj4/swisscheese/Makefile" >
+   <View0 line="15" Type="Source" />
+  </Doc1>
+ </DocsAndViews>
+ <pluginList>
+  <kdevdebugger>
+   <breakpointList>
+    <breakpoint0 location="/afs/umbc.edu/users/s/h/shin7/home/Desktop/Proj4/swisscheese/swisscheese.cpp:497" type="1" tracingFormatString="" traceFormatStringEnabled="0" condition="" tracingEnabled="0" enabled="1" >
+     <tracedExpressions/>
+    </breakpoint0>
+   </breakpointList>
+  </kdevdebugger>
+  <kdevbookmarks>
+   <bookmarks>
+    <bookmark url="/afs/umbc.edu/users/s/h/shin7/home/Desktop/Proj4/swisscheese/swisscheese.cpp" >
+     <mark line="493" />
+     <mark line="446" />
+     <mark line="355" />
+    </bookmark>
+   </bookmarks>
+  </kdevbookmarks>
+  <kdevvalgrind>
+   <executable path="" params="" />
+   <valgrind path="" params="" />
+   <calltree path="" params="" />
+   <kcachegrind path="" />
+  </kdevvalgrind>
+ </pluginList>
+</KDevPrjSession>

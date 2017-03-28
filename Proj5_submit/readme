@@ -1,0 +1,81 @@
+Hello, Elizabeth.
+
+This is Taekyu Shin.(shin7@umbc.edu)
+This readme is to specify the environment/tools I used and to teach how to use the software.
+For your information, I modified single_triangle.nff to show you it works for polygons with 8 vertices.
+
+Homework(HW2 - Raytracer)
+
+Hardware / Software Environment = GL Machine , g++/Makefile/Vim Editor
+
+Help I got - No help. I discussed with Tim Blattner, but I got nothing.
+
+I did not use any arguments since I was just using Makefile. However, to make it convenient for you, the program is going to ask how many threads to use.
+
+USAGE > 
+
+1. g++ raytracer.cpp
+   a.out <NFF Filename> <output-PPM filename>
+
+	For example > 
+		a.out balls3.nff balls3.ppm
+
+USAGE2 >
+1. You can just type Makefile after you specify the wanted NFF file in by modifying Makefile.
+	vim Makefile
+		NFF_SOURCE=balls3.nff <-- 'the file you want.'
+2. 	make
+
+
+When you do this, you will be asked:
+
+How many threads do you want to use?
+<type any number you desire>
+
+	For Example >
+		How many threads do you want to use?
+		4
+
+Now the program will process raytracing.
+
+
+
+
+<Thread Efficiency>
+
+This is to tell you about my experiments on thread efficiency. I used many numbers of threads to see which number works best.
+
+I used balls3.nff to make balls3.ppm and indicated below is the time spent on raytracing.
+
+number of Threads ==>
+1 - 19331
+2 - 9686
+3 - 6469
+4 - 1st trial=4909 / 2nd trial=4846 / 3rd trial=4846
+5 - 5850
+6 - 4903
+7 - 4983
+8 - 4848 / 5136 / 4983
+9 - 5192
+10 - 4929
+11 - 5009
+12 - 4870 / 5171 / 4849
+13 - 4933
+14 - 4906
+15 - 4913
+16 - 4971 / 4959 / 4966
+
+As you can see, from Number 4 ~ 16 show simialr results and performances.
+
+The reason is that GL machine has 4 CPUs. Maybe more than 4 threads work effectively
+
+I would just go for 4 threads in my case.
+
+
+
+
+
+
+
+
+

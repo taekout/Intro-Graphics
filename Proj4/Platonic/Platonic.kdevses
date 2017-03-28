@@ -1,0 +1,36 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!DOCTYPE KDevPrjSession>
+<KDevPrjSession>
+ <DocsAndViews NumberOfDocuments="2" >
+  <Doc0 NumberOfViews="1" URL="file:///afs/umbc.edu/users/s/h/shin7/home/Desktop/Proj4/Platonic/platonic.cpp" >
+   <View0 line="8" Type="Source" />
+  </Doc0>
+  <Doc1 NumberOfViews="1" URL="file:///afs/umbc.edu/users/s/h/shin7/home/Desktop/Proj4/Platonic/Makefile" >
+   <View0 line="12" Type="Source" />
+  </Doc1>
+ </DocsAndViews>
+ <pluginList>
+  <kdevdebugger>
+   <breakpointList/>
+  </kdevdebugger>
+  <kdevbookmarks>
+   <bookmarks>
+    <bookmark url="/afs/umbc.edu/users/s/h/shin7/home/Desktop/Proj4/Platonic/platonic.cpp" >
+     <mark line="1060" />
+     <mark line="947" />
+     <mark line="217" />
+    </bookmark>
+    <bookmark url="/afs/umbc.edu/users/s/h/shin7/home/Desktop/Proj4/Platonic Solid/platonic.cpp" >
+     <mark line="289" />
+     <mark line="409" />
+    </bookmark>
+   </bookmarks>
+  </kdevbookmarks>
+  <kdevvalgrind>
+   <executable path="" params="" />
+   <valgrind path="" params="" />
+   <calltree path="" params="" />
+   <kcachegrind path="" />
+  </kdevvalgrind>
+ </pluginList>
+</KDevPrjSession>

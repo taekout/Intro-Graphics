@@ -1,0 +1,12 @@
+# flags for C compiler
+#   -g to enable debugging info
+CFLAGS = -g
+
+# flags for C++ compiler -- same as C compiler so C++ can find includes
+CXXFLAGS = $(CFLAGS)
+
+# names of libraries to use:
+#   glut for cross-platform window creation and interaction
+#   GL for OpenGL itself
+#   The others are required by the Mac versions of GLUT and GL
+LDLIBS = -framework GLUT -framework OpenGL -lobjc -lm

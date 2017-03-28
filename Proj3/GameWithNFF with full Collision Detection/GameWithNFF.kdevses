@@ -1,0 +1,39 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!DOCTYPE KDevPrjSession>
+<KDevPrjSession>
+ <DocsAndViews NumberOfDocuments="3" >
+  <Doc0 NumberOfViews="1" URL="file:///afs/umbc.edu/users/s/h/shin7/home/Intro_ComputerGraphics/Proj3/GameWithNFF%20with%20full%20Collision%20Detection/maze.cpp" >
+   <View0 line="760" Type="Source" />
+  </Doc0>
+  <Doc1 NumberOfViews="1" URL="file:///afs/umbc.edu/users/s/h/shin7/home/Intro_ComputerGraphics/Proj3/GameWithNFF%20with%20full%20Collision%20Detection/makefile" >
+   <View0 line="8" Type="Source" />
+  </Doc1>
+  <Doc2 NumberOfViews="1" URL="file:///afs/umbc.edu/users/s/h/shin7/home/Intro_ComputerGraphics/Proj3/GameWithNFF%20with%20full%20Collision%20Detection/balls1_transparent.nff" >
+   <View0 line="7" Type="Source" />
+  </Doc2>
+ </DocsAndViews>
+ <pluginList>
+  <kdevdebugger>
+   <breakpointList>
+    <breakpoint0 location="/afs/umbc.edu/users/s/h/shin7/home/Intro_ComputerGraphics/Proj3/GameWithNFF with full Collision Detection/maze.cpp:1166" type="1" tracingFormatString="" traceFormatStringEnabled="0" condition="" tracingEnabled="0" enabled="1" >
+     <tracedExpressions/>
+    </breakpoint0>
+   </breakpointList>
+  </kdevdebugger>
+  <kdevbookmarks>
+   <bookmarks>
+    <bookmark url="/afs/umbc.edu/users/s/h/shin7/home/Desktop/GameWithNFF/maze.cpp" >
+     <mark line="887" />
+     <mark line="1511" />
+     <mark line="288" />
+    </bookmark>
+   </bookmarks>
+  </kdevbookmarks>
+  <kdevvalgrind>
+   <executable path="" params="" />
+   <valgrind path="" params="" />
+   <calltree path="" params="" />
+   <kcachegrind path="" />
+  </kdevvalgrind>
+ </pluginList>
+</KDevPrjSession>

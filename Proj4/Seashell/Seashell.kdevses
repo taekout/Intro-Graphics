@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!DOCTYPE KDevPrjSession>
+<KDevPrjSession>
+ <DocsAndViews NumberOfDocuments="2" >
+  <Doc0 NumberOfViews="1" URL="file:///afs/umbc.edu/users/s/h/shin7/home/Desktop/Proj4/Seashell/seashell.cpp" >
+   <View0 line="654" Type="Source" />
+  </Doc0>
+  <Doc1 NumberOfViews="1" URL="file:///afs/umbc.edu/users/s/h/shin7/home/Desktop/Proj4/Seashell/Makefile" >
+   <View0 line="14" Type="Source" />
+  </Doc1>
+ </DocsAndViews>
+ <pluginList>
+  <kdevdebugger>
+   <breakpointList/>
+  </kdevdebugger>
+  <kdevbookmarks>
+   <bookmarks>
+    <bookmark url="/afs/umbc.edu/users/s/h/shin7/home/Desktop/Proj4/Seashell/seashell.cpp" >
+     <mark line="175" />
+     <mark line="434" />
+    </bookmark>
+   </bookmarks>
+  </kdevbookmarks>
+  <kdevvalgrind>
+   <executable path="" params="" />
+   <valgrind path="" params="" />
+   <calltree path="" params="" />
+   <kcachegrind path="" />
+  </kdevvalgrind>
+ </pluginList>
+</KDevPrjSession>

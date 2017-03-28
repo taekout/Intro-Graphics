@@ -1,0 +1,42 @@
+-Taekyu Shin(shin7@umbc.edu)
+
+Program name : Game with collision detection and jump without using openGl pipelining functions.
+
+1. Environment : OIT Lab in the Engineering building(Just as the professor guided.) To be exact, Computer Lab 21 on the 1st floor of the building.(Across the Help desk office.)
+
+Therefore, it should compile and run fine on the machines there. You should probably not use X-forwarding to grade this.
+
+2. Help : Almost no help. I emailed Wallace just to ask about the level.NFF file. It's because I thought there was something
+wrong with the up vector. After I heard from him, I changed the up vector and some other stuff like near plane just to make it
+look nicer.
+
+3. Program Usage:
+
+When executing program, it reads level.nff file to display the view. 
+
+You can go around in the maze by presing the arrow keys.(up, down, right, left). Do not use w,s,a,d. It won't do anything.
+You can orient your view whatever way you want by clicking mouse and dragging.
+
+	<Summary>
+	Arrow keys : Move forward, backward, to the left/right
+	Mouse Click and drag : View Orientation.
+	Space Key : Jump.(Realistic jump)
+	
+
+4. For some reason, I could not get clock() working on the GL machine so that I did not include it, and I think that it should not be a problem because I think that the TA is going to probably work in one of the OIT labs, in which case my movement speed should display a proper speed.
+
+5. Program features
+	1) No use of glRotate, gluLookAt, glTranslate.
+		I commented out all the gl functions, except for gluPerspective, glMultMatrix.(Those are fine according to the homework specification.)
+	2) Jumping function is there.
+		Press Space Bar. Then you can jump.
+	3) Collision Detection is there.
+		When you hit the wall, you naturally walk along with the wall.
+		This applies to all the 'forward/backward/left/right' movements.
+
+6. Just for your information, I changed the wall colors depending on the triangles. I did it to make it look nice :)
+Sometimes it is confusing while moving. Note that there is one big crossing line across the wall! It is still moving properly! It's just that you see the line on the wall and somehow may think that you are moving upwards or downwards.
+
+7. Please email me at shin7@umbc.edu should you have concerns.
+
+

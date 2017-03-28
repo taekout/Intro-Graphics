@@ -1,0 +1,9 @@
+# KDevelop Custom Project File List
+draw.cpp
+draw.h
+example.cpp
+Makefile
+motion.cpp
+motion.h
+view.cpp
+view.h

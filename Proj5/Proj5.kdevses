@@ -1,0 +1,54 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!DOCTYPE KDevPrjSession>
+<KDevPrjSession>
+ <DocsAndViews NumberOfDocuments="10" >
+  <Doc0 NumberOfViews="1" URL="file:///afs/umbc.edu/users/s/h/shin7/home/Intro_ComputerGraphics/Proj5/raytracer.cpp" >
+   <View0 Type="Source" />
+  </Doc0>
+  <Doc1 NumberOfViews="1" URL="file:///afs/umbc.edu/users/s/h/shin7/home/Intro_ComputerGraphics/Proj5/Makefile" >
+   <View0 line="6" Type="Source" />
+  </Doc1>
+  <Doc2 NumberOfViews="1" URL="file:///afs/umbc.edu/users/s/h/shin7/home/Intro_ComputerGraphics/Proj5/balls1_transparent.nff" >
+   <View0 line="378" Type="Source" />
+  </Doc2>
+  <Doc3 NumberOfViews="1" URL="file:///afs/umbc.edu/users/s/h/shin7/home/Intro_ComputerGraphics/Proj5/balls1.nff" >
+   <View0 Type="Source" />
+  </Doc3>
+  <Doc4 NumberOfViews="1" URL="file:///afs/umbc.edu/users/s/h/shin7/home/Intro_ComputerGraphics/Proj5/balls3.nff" >
+   <View0 Type="Source" />
+  </Doc4>
+  <Doc5 NumberOfViews="1" URL="file:///afs/umbc.edu/users/s/h/shin7/home/Intro_ComputerGraphics/Proj5/tetra1.nff" >
+   <View0 Type="Source" />
+  </Doc5>
+  <Doc6 NumberOfViews="1" URL="file:///afs/umbc.edu/users/s/h/shin7/home/Intro_ComputerGraphics/Proj5/tetra2.nff" >
+   <View0 Type="Source" />
+  </Doc6>
+  <Doc7 NumberOfViews="1" URL="file:///afs/umbc.edu/users/s/h/shin7/home/Intro_ComputerGraphics/Proj5/tetra3.nff" >
+   <View0 Type="Source" />
+  </Doc7>
+  <Doc8 NumberOfViews="1" URL="file:///afs/umbc.edu/users/s/h/shin7/home/Intro_ComputerGraphics/Proj5/teapot2.nff" >
+   <View0 line="3" Type="Source" />
+  </Doc8>
+  <Doc9 NumberOfViews="1" URL="file:///afs/umbc.edu/users/s/h/shin7/home/Intro_ComputerGraphics/Proj5/balls2_transparent.nff" >
+   <View0 line="377" Type="Source" />
+  </Doc9>
+ </DocsAndViews>
+ <pluginList>
+  <kdevdebugger>
+   <breakpointList>
+    <breakpoint0 location="/afs/umbc.edu/users/s/h/shin7/home/Intro_ComputerGraphics/Proj5/raytracer.cpp:1561" type="1" tracingFormatString="" traceFormatStringEnabled="0" condition="" tracingEnabled="0" enabled="1" >
+     <tracedExpressions/>
+    </breakpoint0>
+   </breakpointList>
+  </kdevdebugger>
+  <kdevbookmarks>
+   <bookmarks/>
+  </kdevbookmarks>
+  <kdevvalgrind>
+   <executable path="" params="" />
+   <valgrind path="" params="" />
+   <calltree path="" params="" />
+   <kcachegrind path="" />
+  </kdevvalgrind>
+ </pluginList>
+</KDevPrjSession>

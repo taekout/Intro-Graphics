@@ -1,0 +1,114 @@
+#include <cstdlib>
+
+#if defined(__APPLE__) || defined(MACOSX)
+#include <GLUT/glut.h>
+#elif defined(_WIN32)
+#include "glut.h"
+#else
+#include <GL/glut.h>
+#include <stdio.h>
+#endif
+
+#include "userinput.h"
+#include "drawcube.h"
+
+static int g_WindowWidth = 1024, g_WindowHeight = 768;
+static int g_WindowTopLeftX = 100, g_WindowTopLeftY = 100;
+static char const* g_WindowTitle = "OpenGL Intro";
+
+// Forward declarations for callback functions.
+extern "C" void idle();
+extern "C" void reshape(int width, int height);
+extern "C" void display();
+
+void initGLUT(int *argc, char *argv[]);
+void initGL();
+
+int main(int argc, char *argv[]) {
+    initGLUT(&argc, argv);
+    initGL();
+    
+    // Start the GLUT processing loop.
+    glutMainLoop();
+    
+    return EXIT_SUCCESS;
+}
+
+// Initialize GLUT.
+void initGLUT(int *argc, char *argv[]) {
+    glutInit(argc, argv);
+
+    // We want a full color, depth buffer, and double-buffered context.
+    glutInitDisplayMode(GLUT_RGBA | GLUT_DEPTH | GLUT_DOUBLE);
+
+    // Set the initial size and position for the window.
+    glutInitWindowSize(g_WindowWidth, g_WindowHeight);
+    glutInitWindowPosition(g_WindowTopLeftX, g_WindowTopLeftY);
+    
+    // Creating the window creates the OpenGL context.
+    glutCreateWindow(g_WindowTitle);
+
+    // Set the callback functions, must be set after creating the window.
+    glutKeyboardFunc(keyboard);
+    glutMouseFunc(mouse);
+    glutMotionFunc(motion);
+
+    glutIdleFunc(idle);
+    glutReshapeFunc(reshape);
+    glutDisplayFunc(display);
+}
+
+// Initialize OpenGL.
+void initGL() {
+    // Set the color to clear the screen to.
+    glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+
+    // Enable depth testing.
+    glEnable(GL_DEPTH_TEST);
+    glDepthFunc(GL_LEQUAL);
+    glClearDepth(1.0);
+
+    // Enable face culling.
+    glEnable(GL_CULL_FACE);
+    glCullFace(GL_BACK);
+}
+
+// Request a redraw anytime the loop is idle.
+void idle() {
+    glutPostRedisplay();
+}
+
+// Handle window reshape events.
+void reshape(int width, int height) {
+    // Reset the viewport.
+    glViewport(0, 0, width, height);
+
+    // Set up the projection matrix.
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+    
+    gluPerspective(45.0, width / static_cast<GLdouble>(height), 0.1, 100.0);
+}
+
+// Perform all rendering.
+void display() {
+    // Clear the color and depth buffers.
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+
+    // Set up the model view matrix.
+    glMatrixMode(GL_MODELVIEW);
+    glLoadIdentity();
+    
+    glTranslated(g_PositionX, g_PositionY, g_PositionZ);
+//printf("%f\n", g_AngleY);
+    glRotated(g_AngleX, 1.0, 0.0, 0.0);
+    glRotated(g_AngleY, 0.0, 1.0, 0.0);
+    glRotated(g_AngleZ, 0.0, 0.0, 1.0);
+    
+    // Draw a cube.
+    drawCube();
+
+    // Swap the front and back buffers.
+    glutSwapBuffers();
+}
